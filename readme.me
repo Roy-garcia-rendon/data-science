@@ -1,262 +1,299 @@
-Vista general
+# 📊 Curso de Data Science - Plan de Estudios
 
-Duración sugerida: 16 semanas (8–10 h/semana). Incluyo variante intensiva (8 semanas) y extendida (24 semanas).
+## 🎯 Vista General
 
-Perfil de salida: capaz de tomar un problema de negocio, obtener/limpiar datos, explorar, modelar (ML clásico), evaluar, comunicar hallazgos y desplegar un modelo sencillo.
+**Duración sugerida:** 16 semanas (8–10 h/semana). Incluyo variante intensiva (8 semanas) y extendida (24 semanas).
 
-Stack principal: Python (Anaconda/Miniconda), Jupyter/VS Code, Git/GitHub, SQL, scikit‑learn, pandas, matplotlib/plotly.
-(Opcional): PyTorch o TensorFlow para un módulo de Deep Learning.
+**Perfil de salida:** Capaz de tomar un problema de negocio, obtener/limpiar datos, explorar, modelar (ML clásico), evaluar, comunicar hallazgos y desplegar un modelo sencillo.
 
-Requisitos y puesta a punto (Semana 0)
+### 🛠️ Stack Principal
+- **Python** (Anaconda/Miniconda)
+- **Jupyter/VS Code**
+- **Git/GitHub**
+- **SQL**
+- **scikit‑learn, pandas, matplotlib/plotly**
 
-Conocimientos previos: Aritmética básica, nociones de álgebra lineal (vectores/matrices) y estadística descriptiva elemental. No es obligatorio saber programar.
+> **Opcional:** PyTorch o TensorFlow para un módulo de Deep Learning
 
-Instalación mínima (Windows/macOS/Linux):
+## ⚙️ Requisitos y Puesta a Punto (Semana 0)
 
+### 📚 Conocimientos Previos
+- Aritmética básica
+- Nociones de álgebra lineal (vectores/matrices)
+- Estadística descriptiva elemental
+- **No es obligatorio saber programar**
+
+### 💻 Instalación Mínima (Windows/macOS/Linux)
+
+```bash
 # 1) Instalar Miniconda (o Anaconda)
 # 2) Crear entorno
 conda create -n ds python=3.11 -y
 conda activate ds
+
 # 3) Paquetes base
 conda install -c conda-forge numpy pandas matplotlib plotly scikit-learn jupyterlab ipywidgets -y
 pip install seaborn xgboost lightgbm shap statsmodels optuna category_encoders
+
 # 4) (Opcional) Deep Learning
 pip install torch torchvision torchaudio  # o: pip install tensorflow
+```
 
+### 🔧 Herramientas
+- **VS Code** + extensiones (Python, Jupyter)
+- **Git, GitHub**
 
-Herramientas:
-VS Code + extensiones (Python, Jupyter), Git, GitHub.
-Buenas prácticas desde el día 1: control de versiones (un commit por hito), README claros, notebooks limpios.
+### ✅ Buenas Prácticas desde el Día 1
+- Control de versiones (un commit por hito)
+- README claros
+- Notebooks limpios
 
-Plan de 16 semanas (ruta estándar)
+## 📅 Plan de 16 Semanas (Ruta Estándar)
 
-Cada semana indica: Objetivos, Contenido, Práctica, Entregable.
+> **Cada semana indica:** Objetivos, Contenido, Práctica, Entregable.
 
-Semana 1 — Fundamentos de Python para Data Science
+### 📚 Semana 1 — Fundamentos de Python para Data Science
 
-Objetivos: tipos, estructuras de datos, control de flujo, funciones, módulos, virtualenv/conda, notebooks.
+**🎯 Objetivos:** tipos, estructuras de datos, control de flujo, funciones, módulos, virtualenv/conda, notebooks.
 
-Contenido: listas/tuplas/dict, list comprehensions, manejo de errores, lectura/escritura de archivos.
+**📖 Contenido:** listas/tuplas/dict, list comprehensions, manejo de errores, lectura/escritura de archivos.
 
-Práctica: mini‑ejercicios (FizzBuzz, conteo de palabras, parsing CSV simple).
+**💻 Práctica:** mini‑ejercicios (FizzBuzz, conteo de palabras, parsing CSV simple).
 
-Entregable: notebook con 8–10 ejercicios resueltos y testeados.
+**📋 Entregable:** notebook con 8–10 ejercicios resueltos y testeados.
 
-Semana 2 — Numpy y vectorización
+### 🔢 Semana 2 — Numpy y Vectorización
 
-Objetivos: arrays, broadcasting, álgebra lineal básica, rendimiento vs. bucles.
+**🎯 Objetivos:** arrays, broadcasting, álgebra lineal básica, rendimiento vs. bucles.
 
-Contenido: ndarray, slicing, einsum, tiempos con %timeit.
+**📖 Contenido:** ndarray, slicing, einsum, tiempos con %timeit.
 
-Práctica: operaciones matriciales, normalización/estandarización desde cero.
+**💻 Práctica:** operaciones matriciales, normalización/estandarización desde cero.
 
-Entregable: notebook comparando soluciones vectorizadas vs. bucles.
+**📋 Entregable:** notebook comparando soluciones vectorizadas vs. bucles.
 
-Semana 3 — Pandas y data wrangling
+### 🐼 Semana 3 — Pandas y Data Wrangling
 
-Objetivos: carga/limpieza/unión/transformación de datos tabulares.
+**🎯 Objetivos:** carga/limpieza/unión/transformación de datos tabulares.
 
-Contenido: DataFrame, joins, groupby, pivot, manejo de nulos, tipos de fecha.
+**📖 Contenido:** DataFrame, joins, groupby, pivot, manejo de nulos, tipos de fecha.
 
-Práctica: pipeline de limpieza sobre 2 datasets (ventas + clientes).
+**💻 Práctica:** pipeline de limpieza sobre 2 datasets (ventas + clientes).
 
-Entregable: script etl_basic.py y notebook EDA inicial.
+**📋 Entregable:** script etl_basic.py y notebook EDA inicial.
 
-Semana 4 — Visualización de datos
+### 📊 Semana 4 — Visualización de Datos
 
-Objetivos: comunicar hallazgos con gráficos efectivos.
+**🎯 Objetivos:** comunicar hallazgos con gráficos efectivos.
 
-Contenido: matplotlib, seaborn, plotly; buenas prácticas (títulos, ejes, anotaciones).
+**📖 Contenido:** matplotlib, seaborn, plotly; buenas prácticas (títulos, ejes, anotaciones).
 
-Práctica: dashboard exploratorio simple (plotly) con 4–6 gráficos clave.
+**💻 Práctica:** dashboard exploratorio simple (plotly) con 4–6 gráficos clave.
 
-Entregable: notebook + html exportado del dashboard.
+**📋 Entregable:** notebook + html exportado del dashboard.
 
-Semana 5 — Estadística descriptiva e inferencial I
+### 📈 Semana 5 — Estadística Descriptiva e Inferencial I
 
-Objetivos: distribuciones, muestreo, intervalos de confianza, pruebas A/B.
+**🎯 Objetivos:** distribuciones, muestreo, intervalos de confianza, pruebas A/B.
 
-Contenido: media/mediana/varianza, bootstrapping, test t, chi‑cuadrado.
+**📖 Contenido:** media/mediana/varianza, bootstrapping, test t, chi‑cuadrado.
 
-Práctica: simulaciones Monte Carlo para estimar un intervalo.
+**💻 Práctica:** simulaciones Monte Carlo para estimar un intervalo.
 
-Entregable: reporte corto interpretando resultados (no solo p‑values).
+**📋 Entregable:** reporte corto interpretando resultados (no solo p‑values).
 
-Semana 6 — Aprendizaje supervisado I (modelos lineales y árboles)
+### 🤖 Semana 6 — Aprendizaje Supervisado I (Modelos Lineales y Árboles)
 
-Objetivos: regresión lineal/logística, árboles de decisión, métricas.
+**🎯 Objetivos:** regresión lineal/logística, árboles de decisión, métricas.
 
-Contenido: train/test split, validación cruzada, RMSE, MAE, Accuracy, ROC‑AUC, PR‑AUC.
+**📖 Contenido:** train/test split, validación cruzada, RMSE, MAE, Accuracy, ROC‑AUC, PR‑AUC.
 
-Práctica: baseline → modelo lineal → árbol; comparación y error analysis.
+**💻 Práctica:** baseline → modelo lineal → árbol; comparación y error analysis.
 
-Entregable: notebook con experimento reproducible y model card breve.
+**📋 Entregable:** notebook con experimento reproducible y model card breve.
 
-Semana 7 — Aprendizaje supervisado II (conjuntos y feature engineering)
+### ⚙️ Semana 7 — Aprendizaje Supervisado II (Conjuntos y Feature Engineering)
 
-Objetivos: feature engineering, pipelines, grid/random search.
+**🎯 Objetivos:** feature engineering, pipelines, grid/random search.
 
-Contenido: One‑Hot/Target/Ordinal encoding, escalado, XGBoost/LightGBM, Optuna.
+**📖 Contenido:** One‑Hot/Target/Ordinal encoding, escalado, XGBoost/LightGBM, Optuna.
 
-Práctica: construir un Pipeline con preprocesamiento + modelo; tuning.
+**💻 Práctica:** construir un Pipeline con preprocesamiento + modelo; tuning.
 
-Entregable: script train.py que guarda el mejor modelo y sus métricas.
+**📋 Entregable:** script train.py que guarda el mejor modelo y sus métricas.
 
-Semana 8 — No supervisado y reducción de dimensión
+### 🔍 Semana 8 — No Supervisado y Reducción de Dimensión
 
-Objetivos: clustering (k‑means/DBSCAN), PCA/UMAP, anomaly detection.
+**🎯 Objetivos:** clustering (k‑means/DBSCAN), PCA/UMAP, anomaly detection.
 
-Contenido: silhouette score, elección de k, escalado, visualización 2D/3D.
+**📖 Contenido:** silhouette score, elección de k, escalado, visualización 2D/3D.
 
-Práctica: segmentación de clientes y análisis de perfiles.
+**💻 Práctica:** segmentación de clientes y análisis de perfiles.
 
-Entregable: informe con segmentos y recomendaciones accionables.
+**📋 Entregable:** informe con segmentos y recomendaciones accionables.
 
-Semana 9 — Procesamiento de texto (NLP básico)
+### 📝 Semana 9 — Procesamiento de Texto (NLP Básico)
 
-Objetivos: tokenization, tf‑idf, n‑gramas, modelos lineales para texto.
+**🎯 Objetivos:** tokenization, tf‑idf, n‑gramas, modelos lineales para texto.
 
-Contenido: limpieza, stopwords, lematización; métricas para texto.
+**📖 Contenido:** limpieza, stopwords, lematización; métricas para texto.
 
-Práctica: clasificador de sentimientos sobre reseñas.
+**💻 Práctica:** clasificador de sentimientos sobre reseñas.
 
-Entregable: notebook + matriz de confusión comentada.
+**📋 Entregable:** notebook + matriz de confusión comentada.
 
-Semana 10 — Series temporales
+### ⏰ Semana 10 — Series Temporales
 
-Objetivos: descomposición, estacionariedad, lags, rolling, ARIMA básico y enfoques con ML.
+**🎯 Objetivos:** descomposición, estacionariedad, lags, rolling, ARIMA básico y enfoques con ML.
 
-Contenido: métricas (MAE/MAPE/SMAPE), validación temporal (expanding window).
+**📖 Contenido:** métricas (MAE/MAPE/SMAPE), validación temporal (expanding window).
 
-Práctica: pronóstico de demanda semanal con variables exógenas simples.
+**💻 Práctica:** pronóstico de demanda semanal con variables exógenas simples.
 
-Entregable: notebook + gráfico de pronóstico con intervalos.
+**📋 Entregable:** notebook + gráfico de pronóstico con intervalos.
 
-Semana 11 — SQL para analítica
+### 🗄️ Semana 11 — SQL para Analítica
 
-Objetivos: SELECT/JOIN/CTE/Window Functions, agregaciones.
+**🎯 Objetivos:** SELECT/JOIN/CTE/Window Functions, agregaciones.
 
-Contenido: modelado de esquemas (estrella/copo), query planning básico.
+**📖 Contenido:** modelado de esquemas (estrella/copo), query planning básico.
 
-Práctica: 10–15 consultas reales (retención, cohortes, funnel).
+**💻 Práctica:** 10–15 consultas reales (retención, cohortes, funnel).
 
-Entregable: archivo .sql y notebook que ejecuta queries (sqlite o PostgreSQL local).
+**📋 Entregable:** archivo .sql y notebook que ejecuta queries (sqlite o PostgreSQL local).
 
-Semana 12 — MLOps y despliegue básico
+### 🚀 Semana 12 — MLOps y Despliegue Básico
 
-Objetivos: serialización (joblib), APIs con FastAPI, inference y monitoring ligero.
+**🎯 Objetivos:** serialización (joblib), APIs con FastAPI, inference y monitoring ligero.
 
-Contenido: estructura de proyecto, .env, logging, pruebas unitarias, data drift.
+**📖 Contenido:** estructura de proyecto, .env, logging, pruebas unitarias, data drift.
 
-Práctica: empaquetar modelo y exponer POST /predict.
+**💻 Práctica:** empaquetar modelo y exponer POST /predict.
 
-Entregable: repositorio con Dockerfile (opcional), README de despliegue local.
+**📋 Entregable:** repositorio con Dockerfile (opcional), README de despliegue local.
 
-Semana 13 — Ética, privacidad y experimentación
+### ⚖️ Semana 13 — Ética, Privacidad y Experimentación
 
-Objetivos: sesgos, equidad, privacidad de datos, diseño de experimentos.
+**🎯 Objetivos:** sesgos, equidad, privacidad de datos, diseño de experimentos.
 
-Contenido: métricas de equidad (demographic parity, equalized odds), diseño de A/B test.
+**📖 Contenido:** métricas de equidad (demographic parity, equalized odds), diseño de A/B test.
 
-Práctica: auditoría de sesgo en un dataset sintético.
+**💻 Práctica:** auditoría de sesgo en un dataset sintético.
 
-Entregable: model card ampliada con sección de riesgos y mitigaciones.
+**📋 Entregable:** model card ampliada con sección de riesgos y mitigaciones.
 
-Semana 14 — Visual storytelling y data apps
+### 📱 Semana 14 — Visual Storytelling y Data Apps
 
-Objetivos: comunicar para negocio.
+**🎯 Objetivos:** comunicar para negocio.
 
-Contenido: narrativa de datos, dashboards en Streamlit/Plotly Dash.
+**📖 Contenido:** narrativa de datos, dashboards en Streamlit/Plotly Dash.
 
-Práctica: construir una app sencilla con 2–3 vistas.
+**💻 Práctica:** construir una app sencilla con 2–3 vistas.
 
-Entregable: app ejecutable localmente + demo en video breve.
+**📋 Entregable:** app ejecutable localmente + demo en video breve.
 
-Semana 15 — Proyecto integrador (parte 1): definición y EDA
+### 🎯 Semana 15 — Proyecto Integrador (Parte 1): Definición y EDA
 
-Objetivos: plantear problema, definir métrica de éxito, entender datos.
+**🎯 Objetivos:** plantear problema, definir métrica de éxito, entender datos.
 
-Contenido: problem framing, hipótesis, riesgos, plan de trabajo.
+**📖 Contenido:** problem framing, hipótesis, riesgos, plan de trabajo.
 
-Práctica: EDA profundo, data quality report y baseline.
+**💻 Práctica:** EDA profundo, data quality report y baseline.
 
-Entregable: propuesta de proyecto (1–2 páginas) + EDA notebook.
+**📋 Entregable:** propuesta de proyecto (1–2 páginas) + EDA notebook.
 
-Semana 16 — Proyecto integrador (parte 2): modelado, evaluación y entrega
+### 🏆 Semana 16 — Proyecto Integrador (Parte 2): Modelado, Evaluación y Entrega
 
-Objetivos: experimentar, seleccionar, empaquetar, comunicar.
+**🎯 Objetivos:** experimentar, seleccionar, empaquetar, comunicar.
 
-Contenido: training diary, comparación honesta, post‑mortem.
+**📖 Contenido:** training diary, comparación honesta, post‑mortem.
 
-Práctica: entrenamiento final + API + dashboard.
+**💻 Práctica:** entrenamiento final + API + dashboard.
 
-Entregable: repo completo con resultados, app, model card, y presentación (10 diapositivas).
+**📋 Entregable:** repo completo con resultados, app, model card, y presentación (10 diapositivas).
 
-Variante intensiva (8 semanas)
+## ⚡ Variantes del Plan
+
+### 🚀 Variante Intensiva (8 semanas)
 
 Combina cada dos semanas del plan estándar (1–2, 3–4, 5–6, 7–8, 9–10, 11–12, 13–14, 15–16).
 
-Dedicación: 15–20 h/semana.
+**⏰ Dedicación:** 15–20 h/semana.
 
-Variante extendida (24 semanas)
+### 🐌 Variante Extendida (24 semanas)
 
 Divide cada semana estándar en dos: primera mitad teoría/práctica guiada, segunda mitad mini‑proyecto.
 
-Banco de proyectos (elige 1 para el integrador)
+## 🎯 Banco de Proyectos (Elige 1 para el Integrador)
 
-Predicción de abandono (churn): clasificación binaria, foco en interpretabilidad (SHAP) y business impact.
+### 📊 Opciones de Proyectos
 
-Pronóstico de demanda: serie temporal con variables externas (promociones, festivos).
+1. **🔴 Predicción de Abandono (Churn)**
+   - Clasificación binaria, foco en interpretabilidad (SHAP) y business impact.
 
-Segmentación de clientes: clustering + perfilado y propuestas de marketing.
+2. **📈 Pronóstico de Demanda**
+   - Serie temporal con variables externas (promociones, festivos).
 
-NLP de reseñas: análisis de sentimiento y temas; priorización de mejoras de producto.
+3. **👥 Segmentación de Clientes**
+   - Clustering + perfilado y propuestas de marketing.
 
-(Opcional DL) Clasificación de imágenes (p. ej., defectos de fabricación) con CNN pre‑entrenada.
+4. **📝 NLP de Reseñas**
+   - Análisis de sentimiento y temas; priorización de mejoras de producto.
 
-Fuentes de datos sugeridas: repositorios públicos como UCI, Kaggle, data.gov, INE/INEGI/DANE/INE (según tu país), portales abiertos municipales, o APIs públicas (clima, transporte, etc.).
+5. **🖼️ Clasificación de Imágenes** *(Opcional DL)*
+   - Defectos de fabricación con CNN pre‑entrenada.
 
-Evaluación y rúbricas (resumen)
+### 📚 Fuentes de Datos Sugeridas
+- **Repositorios públicos:** UCI, Kaggle, data.gov
+- **Instituciones:** INE/INEGI/DANE/INE (según tu país)
+- **Portales abiertos:** municipales
+- **APIs públicas:** clima, transporte, etc.
 
-Trabajo semanal (40%)
+## 📊 Evaluación y Rúbricas (Resumen)
 
-Correctitud técnica (40%), claridad del código (30%), comunicación de resultados (20%), reproducibilidad (10%).
+### 📝 Trabajo Semanal (40%)
 
-Proyecto integrador (60%)
+| Criterio | Peso |
+|----------|------|
+| **Correctitud técnica** | 40% |
+| **Claridad del código** | 30% |
+| **Comunicación de resultados** | 20% |
+| **Reproducibilidad** | 10% |
 
-Planteamiento y métrica de negocio (15%)
+### 🏆 Proyecto Integrador (60%)
 
-Calidad de datos/EDA/ingeniería (20%)
+| Componente | Peso |
+|------------|------|
+| **Planteamiento y métrica de negocio** | 15% |
+| **Calidad de datos/EDA/ingeniería** | 20% |
+| **Rigor experimental y métricas** | 20% |
+| **Despliegue + documentación** | 25% |
+| **Presentación y Q&A** | 20% |
 
-Rigor experimental y métricas (20%)
+### ✅ Definition of Done (DoD)
 
-Despliegue + documentación (25%)
+- **Repo completo:** README, requirements.txt o environment.yml
+- **Instrucciones claras:** para reproducir
+- **Datos:** incluidos o script para descargarlos
+- **Notebooks limpios:** y seeds fijadas
+- **Reporte final:** ≤ 8 páginas + apéndice técnico
 
-Presentación y Q&A (20%)
+## 🎯 Hitos y Entregables por Módulo (Lista Rápida)
 
-Definition of Done (DoD):
+| Módulos | Entregables |
+|---------|-------------|
+| **M1–M4** | EDA sólida y gráficos claros |
+| **M5–M8** | Modelos clásicos con pipelines y validación |
+| **M9–M10** | Texto y tiempo con métricas apropiadas |
+| **M11–M12** | SQL + API de inferencia |
+| **M13–M14** | Equidad/privacidad + app/visualización final |
+| **M15–M16** | Proyecto completo con despliegue local |
 
-Repo con README, requirements.txt o environment.yml, instrucciones para reproducir, datos (o script para descargarlos), notebooks limpios y seeds fijadas.
+## 📋 Plantillas Útiles (Copiar/Usar)
 
-Reporte final ≤ 8 páginas + apéndice técnico.
+### 📁 Estructura de Repositorio
 
-Hitos y entregables por módulo (lista rápida)
-
-M1–M4: EDA sólida y gráficos claros.
-
-M5–M8: Modelos clásicos con pipelines y validación.
-
-M9–M10: Texto y tiempo con métricas apropiadas.
-
-M11–M12: SQL + API de inferencia.
-
-M13–M14: Equidad/privacidad + app/visualización final.
-
-M15–M16: Proyecto completo con despliegue local.
-
-Plantillas útiles (copiar/usar)
-
-Estructura de repositorio
+```
 project/
 ├─ data/              # raw/processed (o scripts para descargar)
 ├─ notebooks/         # 01_eda.ipynb, 02_modeling.ipynb, ...
@@ -266,71 +303,66 @@ project/
 ├─ tests/             # pruebas unitarias
 ├─ requirements.txt   # o environment.yml
 └─ README.md
+```
 
-Checklist de EDA (extracto)
+### ✅ Checklist de EDA (Extracto)
 
- Diccionario de datos y data quality (nulos, duplicados, outliers).
+- [ ] **Diccionario de datos** y data quality (nulos, duplicados, outliers)
+- [ ] **Variables objetivo** y leakage potencial
+- [ ] **Relación variables↔objetivo** (num/cat)
+- [ ] **Análisis temporal/estacionalidad** (si aplica)
+- [ ] **Hipótesis de negocio** + cómo validarlas
 
- Variables objetivo y leakage potencial.
+### 📋 Card de Modelo (Resumen)
 
- Relación variables↔objetivo (num/cat).
+- **Propósito**
+- **Población objetivo**
+- **Variables principales**
+- **Supuestos**
+- **Riesgos y sesgos**
+- **Métricas** (val/test)
+- **Límites de uso**
+- **Owner**
 
- Análisis temporal/estacionalidad (si aplica).
+## 📚 Sugerencias de Estudio y Recursos *(No Obligatorios)*
 
- Hipótesis de negocio + cómo validarlas.
+### 📖 Libros (Referencias Clásicas)
 
-Card de modelo (resumen)
+- **Python for Data Analysis** — Wes McKinney
+- **Hands‑On Machine Learning with Scikit‑Learn, Keras & TensorFlow** — Aurélien Géron
+- **An Introduction to Statistical Learning (ISL, 2ª ed.)** — James et al. (con labs en R y Python)
 
-Propósito, población objetivo, variables principales, supuestos, riesgos y sesgos, métricas (val/test), límites de uso, owner.
+### 💻 Práctica Guiada
 
-Sugerencias de estudio y recursos (no obligatorios)
+- **Competencias principiantes en Kaggle:** Titanic, House Prices, SMS Spam
+- **Retos de SQL:** CTEs, ventanas en plataformas de ejercicios
+- **Camino opcional en R:** tidyverse (dplyr, tidyr), ggplot2, tidymodels. Transfiere conceptos 1:1
 
-Libros (referencias clásicas):
+## 📅 Itinerario Sugerido por Semana (Tareas Concretas)
 
-Python for Data Analysis — Wes McKinney.
+| Día | Actividad | Tiempo |
+|-----|-----------|--------|
+| **Lunes–Martes** | Teoría + notas | 2–3 h |
+| **Miércoles** | Práctica guiada | 2 h |
+| **Jueves** | Mini‑proyecto/experimento | 2 h |
+| **Viernes** | Revisión por checklist + commit final | 1 h |
+| **Fin de semana** *(opcional)* | Lectura extra/retos | 2 h |
 
-Hands‑On Machine Learning with Scikit‑Learn, Keras & TensorFlow — Aurélien Géron.
+## 🚀 Primeras 72 Horas (Para Arrancar Ya)
 
-An Introduction to Statistical Learning (ISL, 2ª ed.) — James et al. (con labs en R y Python).
+### ✅ Checklist de Inicio
 
-Práctica guiada:
+1. **Instala Miniconda** y crea el entorno (comandos arriba)
+2. **Abre JupyterLab** y completa 10 ejercicios básicos de Python (condicionales, bucles, funciones)
+3. **Descarga un CSV público** (por ejemplo, ventas mensuales) y:
+   - Cárgalo con pandas, inspección `.info()/.describe()`
+   - Limpia nulos y crea 3 gráficos (tendencia, barras por categoría, caja)
+   - Sube el repo a GitHub con un README que explique tu objetivo y hallazgos
 
-Competencias principiantes en Kaggle (Titanic, House Prices, SMS Spam).
+## 🎯 Cómo Sabrás que Estás Listo/a
 
-Retos de SQL (CTEs, ventanas) en plataformas de ejercicios.
+### ✅ Criterios de Éxito
 
-Camino opcional en R: tidyverse (dplyr, tidyr), ggplot2, tidymodels. Transfiere conceptos 1:1.
-
-Itinerario sugerido por semana (tareas concretas)
-
-Lunes–Martes: teoría + notas (2–3 h).
-
-Miércoles: práctica guiada (2 h).
-
-Jueves: mini‑proyecto/experimento (2 h).
-
-Viernes: revisión por checklist + commit final (1 h).
-
-Fin de semana (opcional): lectura extra/retos (2 h).
-
-Primeras 72 horas (para arrancar ya)
-
-Instala Miniconda y crea el entorno (comandos arriba).
-
-Abre JupyterLab y completa 10 ejercicios básicos de Python (condicionales, bucles, funciones).
-
-Descarga un CSV público (por ejemplo, ventas mensuales) y:
-
-Cárgalo con pandas, inspección .info()/.describe().
-
-Limpia nulos y crea 3 gráficos (tendencia, barras por categoría, caja).
-
-Sube el repo a GitHub con un README que explique tu objetivo y hallazgos.
-
-Cómo sabrás que estás listo/a
-
-Puedes plantear una pregunta de negocio, construir un baseline, iterar y justificar por qué tu modelo final es mejor (con métricas y error analysis).
-
-Tienes 3 notebooks de portafolio (EDA sólido, modelo supervisado, serie temporal o NLP) y 1 app/endpoint de inferencia.
-
-Dominas consultas SQL intermedias (joins, CTEs, ventanas).
+- [ ] **Puedes plantear una pregunta de negocio**, construir un baseline, iterar y justificar por qué tu modelo final es mejor (con métricas y error analysis)
+- [ ] **Tienes 3 notebooks de portafolio** (EDA sólido, modelo supervisado, serie temporal o NLP) y 1 app/endpoint de inferencia
+- [ ] **Dominas consultas SQL intermedias** (joins, CTEs, ventanas)
