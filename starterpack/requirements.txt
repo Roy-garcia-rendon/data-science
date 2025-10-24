@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+plotly
+scikit-learn
+ipywidgets
+statsmodels
+xgboost
+lightgbm
+shap
+optuna
+category_encoders

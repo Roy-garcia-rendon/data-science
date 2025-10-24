@@ -1,0 +1,5 @@
+- [ ] 00_setup.ipynb OK
+- [ ] 01_python_basics.ipynb completo
+- [ ] 02_numpy.ipynb zscore
+- [ ] 03_pandas_eda.ipynb con 3 gráficos y 3 hallazgos
+- [ ] src/etl_basic.py ejecutado y data/processed/sales_clean.csv generado

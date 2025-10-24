@@ -1,0 +1,19 @@
+name: ds
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - plotly
+  - scikit-learn
+  - ipywidgets
+  - statsmodels
+  - pip
+  - pip:
+      - xgboost
+      - lightgbm
+      - shap
+      - optuna
+      - category_encoders
