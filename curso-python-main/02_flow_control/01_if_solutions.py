@@ -38,7 +38,7 @@ elif operacion == "/":
 else:
     print("Operación no válida.")
 
-if 'resultado' in locals(): #Comprueba si la variable resultado existe.
+if 'resultado' in locals():  # Comprueba si la variable resultado existe.
     print(f"El resultado es: {resultado}")
 
 # Ejercicio 3: Año bisiesto
